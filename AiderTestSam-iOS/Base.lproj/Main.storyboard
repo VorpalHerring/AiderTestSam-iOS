@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jge-oo-zx3">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="DN7-JU-350">
+            <objects>
+                <navigationController id="jge-oo-zx3" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VxQ-e8-dhV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="5NZ-Sb-wap"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Ba-h8-Gkl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-626" y="127"/>
+        </scene>
+        <!--Messages-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AiderTestSam_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LqY-TH-Aad">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MessageCell" id="I2m-6P-NBj" customClass="MessageTableViewCell" customModule="AiderTestSam_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="370"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="I2m-6P-NBj" id="5QA-kv-dpa">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="370"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="B8D-Go-snC">
+                                                    <rect key="frame" x="0.0" y="1.5" width="60" height="57"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="60" id="Li9-QM-mfP"/>
+                                                        <constraint firstAttribute="height" constant="60" id="SAi-w1-lJX"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Sender Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gj5-Tm-eiz">
+                                                    <rect key="frame" x="68" y="8" width="326" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpy-h0-Ia6">
+                                                    <rect key="frame" x="68" y="37" width="326" height="325"/>
+                                                    <mutableString key="text">Vastness is bearable only through love paroxysm of global death quasar laws of physics with pretty stories for which there's little good evidence the ash of stellar alchemy. Emerged into consciousness dream of the mind's eye take root and flourish Tunguska event the only home we've ever known concept of the number one. Citizens of distant epochs two ghostly white figures in coveralls and helmets are softly dancing bits of moving fluff another world stirred by starlight not a sunrise but a galaxyrise and billions upon billions upon billions upon billions upon billions upon billions upon billions.</mutableString>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="B8D-Go-snC" firstAttribute="top" secondItem="5QA-kv-dpa" secondAttribute="top" id="E5K-1f-ODI"/>
+                                                <constraint firstAttribute="bottom" secondItem="kpy-h0-Ia6" secondAttribute="bottom" constant="8" id="RXm-CG-Y49"/>
+                                                <constraint firstItem="kpy-h0-Ia6" firstAttribute="leading" secondItem="B8D-Go-snC" secondAttribute="trailing" constant="8" id="TLK-Eu-rEx"/>
+                                                <constraint firstItem="B8D-Go-snC" firstAttribute="leading" secondItem="5QA-kv-dpa" secondAttribute="leading" id="cBE-4P-AHt"/>
+                                                <constraint firstItem="kpy-h0-Ia6" firstAttribute="top" secondItem="gj5-Tm-eiz" secondAttribute="bottom" constant="8" id="dQH-U1-p45"/>
+                                                <constraint firstItem="gj5-Tm-eiz" firstAttribute="top" secondItem="5QA-kv-dpa" secondAttribute="top" constant="8" id="inT-qi-Joh"/>
+                                                <constraint firstAttribute="trailing" secondItem="gj5-Tm-eiz" secondAttribute="trailing" constant="20" id="rO3-Hl-PmC"/>
+                                                <constraint firstAttribute="trailing" secondItem="kpy-h0-Ia6" secondAttribute="trailing" constant="20" id="zcO-cd-PKI"/>
+                                                <constraint firstItem="gj5-Tm-eiz" firstAttribute="leading" secondItem="B8D-Go-snC" secondAttribute="trailing" constant="8" id="zza-hy-d5W"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="messageLabel" destination="kpy-h0-Ia6" id="sbo-ir-lgd"/>
+                                            <outlet property="senderLabel" destination="gj5-Tm-eiz" id="hIW-4f-egz"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Z6W-2f-gbz"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="GKP-rC-2iz"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LqY-TH-Aad" secondAttribute="trailing" id="AqO-Oz-xhR"/>
+                            <constraint firstItem="LqY-TH-Aad" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="M1X-Aa-Ixe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LqY-TH-Aad" secondAttribute="bottom" id="f3j-bI-NKX"/>
+                            <constraint firstItem="LqY-TH-Aad" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sTq-UP-HuG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Messages" id="HdG-w7-7O8"/>
+                    <connections>
+                        <outlet property="messageListTableView" destination="LqY-TH-Aad" id="D8J-cU-hC0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="127"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+    </resources>
+</document>
